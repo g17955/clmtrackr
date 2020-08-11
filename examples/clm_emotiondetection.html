@@ -241,6 +241,10 @@
 
 					var er = ec.meanPredict(cp);
 					if (er) {
+                        console.log("動画");
+                        if (er.length>10){			
+                        console.log("動画制御中");
+				        }
 						updateData(er);
 						for (var i = 0;i < er.length;i++) {
 							if (er[i].value > 0.4) {
