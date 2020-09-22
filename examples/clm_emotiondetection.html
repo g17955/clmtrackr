@@ -136,6 +136,8 @@
                 </div>
                 <video id = "myvideo" src=“https://drive.google.com/uc?export=download&id=1DZvIvk9X5J-a3q6QF3mvxWcGoy0psjnt”>　
                 </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wU-rsTZoWLY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
                 <div id="emotion_container">
                     <div id="emotion_icons">
                         <img class="emotion_icon" id="icon1" src="./media/icon_angry.png">
@@ -246,6 +248,7 @@
                             console.log("動画");
                             if (er[1].value>0.4){			
                             var v = document.getElementById('myvideo');
+                            var video = $("#myvideo").get(0);
                             v.load();
                             v.play();
                             }
