@@ -3,6 +3,7 @@
         <head>
             <title>Face tracker</title>
             <meta charset="utf-8">
+            <script src="https://obniz.io/js/jquery-3.2.1.min.js"></script>
             <link href="./styles/bootstrap.min.css" rel="stylesheet" type="text/css">
             <style>
                 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
@@ -249,11 +250,10 @@
 
                         var er = ec.meanPredict(cp);
                         if (er) {
-                            console.log("動画");
-                            if (er[1].value>0.4){			
+                            //console.log("動画");
+                            if (er[3].value>0.4){			
                             var v = document.getElementById('myvideo');
                             var video = $("#myvideo").get(0);
-                            v.load();
                             v.play();
                             }
                             updateData(er);
