@@ -254,9 +254,11 @@
                             //console.log("動画");
                             if (er[3].value>0.4){			
                             // var video = $("#myvideo").get(0);
-                                v.muted = true;
+                                //v.muted = true;
+                                v.volume = 0.2
                             }else{
-                                v.muted = false;
+                                //v.muted = false;
+                                v.volume = 0.8
                             }
                             updateData(er);
                             for (var i = 0;i < er.length;i++) {
